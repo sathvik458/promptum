@@ -37,7 +37,6 @@ class Runner:
 
         results = await asyncio.gather(
             *[run_with_semaphore(tc) for tc in test_cases],
-            return_exceptions=False,
         )
 
         return list(results)
