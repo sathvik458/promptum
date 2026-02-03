@@ -98,13 +98,11 @@ class PlaceholderValidator:
     Used when original validator cannot be reconstructed from storage.
     Always returns True. Original validator logic is not preserved.
     """
+
     description: str
 
     def validate(self, response: str) -> tuple[bool, dict[str, Any]]:
-        return True, {
-            "placeholder": True,
-            "note": "Original validator could not be reconstructed"
-        }
+        return True, {"placeholder": True, "note": "Original validator could not be reconstructed"}
 
     def describe(self) -> str:
         return self.description

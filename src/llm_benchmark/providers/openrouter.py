@@ -108,7 +108,9 @@ class OpenRouterClient:
                     retry_delays.append(delay)
                     await asyncio.sleep(delay)
                 else:
-                    raise RuntimeError(f"Request failed after {config.max_attempts} attempts: {e}") from e
+                    raise RuntimeError(
+                        f"Request failed after {config.max_attempts} attempts: {e}"
+                    ) from e
             except httpx.HTTPStatusError as e:
                 raise RuntimeError(f"HTTP error {e.response.status_code}: {e.response.text}") from e
 

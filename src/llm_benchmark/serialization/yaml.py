@@ -1,4 +1,3 @@
-
 import yaml
 
 from llm_benchmark.benchmark.report import Report
