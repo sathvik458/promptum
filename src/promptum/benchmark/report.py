@@ -8,7 +8,6 @@ from promptum.core.result import TestResult
 @dataclass(frozen=True, slots=True)
 class Report:
     results: Sequence[TestResult]
-    metadata: dict[str, Any]
 
     def get_summary(self) -> dict[str, Any]:
         total = len(self.results)
@@ -49,7 +48,7 @@ class Report:
         if passed is not None:
             filtered = [r for r in filtered if r.passed == passed]
 
-        return Report(results=filtered, metadata=self.metadata)
+        return Report(results=filtered)
 
     def group_by(self, key: Callable[[TestResult], str]) -> dict[str, "Report"]:
         groups: dict[str, list[TestResult]] = {}
@@ -60,7 +59,7 @@ class Report:
                 groups[group_key] = []
             groups[group_key].append(result)
 
-        return {k: Report(results=v, metadata=self.metadata) for k, v in groups.items()}
+        return {k: Report(results=v) for k, v in groups.items()}
 
     def compare_models(self) -> dict[str, dict[str, Any]]:
         by_model = self.group_by(lambda r: r.test_case.model)

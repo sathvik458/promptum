@@ -1,6 +1,5 @@
 import asyncio
 from collections.abc import Callable, Sequence
-from typing import Any
 
 from promptum.benchmark.report import Report
 from promptum.core.result import TestResult
@@ -29,12 +28,12 @@ class Benchmark:
     def add_tests(self, test_cases: Sequence[TestCase]) -> None:
         self._test_cases.extend(test_cases)
 
-    def run(self, metadata: dict[str, Any] | None = None) -> Report:
-        return asyncio.run(self.run_async(metadata))
+    def run(self) -> Report:
+        return asyncio.run(self.run_async())
 
-    async def run_async(self, metadata: dict[str, Any] | None = None) -> Report:
+    async def run_async(self) -> Report:
         if not self._test_cases:
-            return Report(results=[], metadata=metadata or {})
+            return Report(results=[])
 
         runner = Runner(
             provider=self.provider,
@@ -44,7 +43,4 @@ class Benchmark:
 
         results = await runner.run(self._test_cases)
 
-        return Report(
-            results=results,
-            metadata=metadata or {},
-        )
+        return Report(results=results)

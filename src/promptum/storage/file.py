@@ -80,7 +80,6 @@ class FileStorage:
     @staticmethod
     def _serialize_report(report: Report) -> dict[str, Any]:
         return {
-            "metadata": report.metadata,
             "results": [
                 {
                     "test_case": {
@@ -154,4 +153,4 @@ class FileStorage:
             )
             results.append(result)
 
-        return Report(results=results, metadata=data["metadata"])
+        return Report(results=results)

@@ -57,4 +57,4 @@ def sample_results() -> list[TestResult]:
 
 @pytest.fixture
 def sample_report(sample_results: list[TestResult]) -> Report:
-    return Report(results=sample_results, metadata={"version": "1.0"})
+    return Report(results=sample_results)

@@ -12,7 +12,6 @@ class JSONSerializer(BaseSerializer):
 
     def serialize(self, report: Report) -> str:
         data = {
-            "metadata": report.metadata,
             "summary": report.get_summary(),
             "results": [self._serialize_result(r) for r in report.results],
         }

@@ -13,7 +13,7 @@ def test_report_summary(sample_report: Report) -> None:
 
 
 def test_report_summary_empty() -> None:
-    report = Report(results=[], metadata={})
+    report = Report(results=[])
     summary = report.get_summary()
 
     assert summary["total"] == 0
