@@ -1,4 +1,4 @@
-from llm_benchmark.validation import JsonSchema
+from promptum.validation import JsonSchema
 
 
 def test_json_schema_valid(json_schema_validator: JsonSchema) -> None:

@@ -2,11 +2,11 @@ import asyncio
 from collections.abc import Callable, Sequence
 from typing import Any
 
-from llm_benchmark.benchmark.report import Report
-from llm_benchmark.core.result import TestResult
-from llm_benchmark.core.test_case import TestCase
-from llm_benchmark.execution.runner import Runner
-from llm_benchmark.providers.protocol import LLMProvider
+from promptum.benchmark.report import Report
+from promptum.core.result import TestResult
+from promptum.core.test_case import TestCase
+from promptum.execution.runner import Runner
+from promptum.providers.protocol import LLMProvider
 
 
 class Benchmark:

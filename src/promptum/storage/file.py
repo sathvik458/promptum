@@ -4,11 +4,11 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any
 
-from llm_benchmark.benchmark.report import Report
-from llm_benchmark.core.metrics import Metrics
-from llm_benchmark.core.result import TestResult
-from llm_benchmark.core.test_case import TestCase
-from llm_benchmark.validation.validators import PlaceholderValidator
+from promptum.benchmark.report import Report
+from promptum.core.metrics import Metrics
+from promptum.core.result import TestResult
+from promptum.core.test_case import TestCase
+from promptum.validation.validators import PlaceholderValidator
 
 
 class FileStorage:

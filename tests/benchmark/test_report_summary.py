@@ -1,4 +1,4 @@
-from llm_benchmark.benchmark import Report
+from promptum.benchmark import Report
 
 
 def test_report_summary(sample_report: Report) -> None:

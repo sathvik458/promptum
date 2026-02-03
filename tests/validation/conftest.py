@@ -1,6 +1,6 @@
 import pytest
 
-from llm_benchmark.validation import Contains, ExactMatch, JsonSchema, Regex
+from promptum.validation import Contains, ExactMatch, JsonSchema, Regex
 
 
 @pytest.fixture

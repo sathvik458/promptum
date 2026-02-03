@@ -1,4 +1,4 @@
-from llm_benchmark.validation import ExactMatch
+from promptum.validation import ExactMatch
 
 
 def test_exact_match_case_sensitive(exact_match_validator: ExactMatch) -> None:

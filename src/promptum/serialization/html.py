@@ -3,7 +3,7 @@ from pathlib import Path
 
 from jinja2 import Template
 
-from llm_benchmark.benchmark.report import Report
+from promptum.benchmark.report import Report
 
 
 class HTMLSerializer:

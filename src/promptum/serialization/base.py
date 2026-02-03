@@ -2,7 +2,7 @@
 
 from typing import Any
 
-from llm_benchmark.core.result import TestResult
+from promptum.core.result import TestResult
 
 
 class BaseSerializer:

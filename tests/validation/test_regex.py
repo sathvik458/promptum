@@ -1,4 +1,4 @@
-from llm_benchmark.validation import Regex
+from promptum.validation import Regex
 
 
 def test_regex_match(regex_validator: Regex) -> None:

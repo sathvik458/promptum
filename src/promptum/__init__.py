@@ -1,15 +1,15 @@
-from llm_benchmark.benchmark import Benchmark, Report
-from llm_benchmark.core import Metrics, RetryConfig, RetryStrategy, TestCase, TestResult
-from llm_benchmark.execution import Runner
-from llm_benchmark.providers import LLMProvider, OpenRouterClient
-from llm_benchmark.serialization import (
+from promptum.benchmark import Benchmark, Report
+from promptum.core import Metrics, RetryConfig, RetryStrategy, TestCase, TestResult
+from promptum.execution import Runner
+from promptum.providers import LLMProvider, OpenRouterClient
+from promptum.serialization import (
     HTMLSerializer,
     JSONSerializer,
     Serializer,
     YAMLSerializer,
 )
-from llm_benchmark.storage import FileStorage, ResultStorage
-from llm_benchmark.validation import (
+from promptum.storage import FileStorage, ResultStorage
+from promptum.validation import (
     Contains,
     ExactMatch,
     JsonSchema,

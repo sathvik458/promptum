@@ -2,7 +2,7 @@ from collections.abc import Callable, Sequence
 from dataclasses import dataclass
 from typing import Any
 
-from llm_benchmark.core.result import TestResult
+from promptum.core.result import TestResult
 
 
 @dataclass(frozen=True, slots=True)

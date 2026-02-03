@@ -1,5 +1,5 @@
-from llm_benchmark.validation.protocol import Validator
-from llm_benchmark.validation.validators import (
+from promptum.validation.protocol import Validator
+from promptum.validation.validators import (
     Contains,
     ExactMatch,
     JsonSchema,

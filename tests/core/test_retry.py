@@ -1,4 +1,4 @@
-from llm_benchmark.core import RetryConfig, RetryStrategy
+from promptum.core import RetryConfig, RetryStrategy
 
 
 def test_retry_config_defaults(default_retry_config: RetryConfig) -> None:

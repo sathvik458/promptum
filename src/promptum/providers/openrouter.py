@@ -4,8 +4,8 @@ from typing import Any
 
 import httpx
 
-from llm_benchmark.core.metrics import Metrics
-from llm_benchmark.core.retry import RetryConfig, RetryStrategy
+from promptum.core.metrics import Metrics
+from promptum.core.retry import RetryConfig, RetryStrategy
 
 
 class OpenRouterClient:

@@ -4,15 +4,15 @@ sync:
 
 # Run type checking with ty
 typecheck:
-    uv run ty check src/llm_benchmark
+    uv run ty check src/promptum
 
 # Run ruff linter with automatic fixes
 lint:
-    uv run ruff check --fix src/llm_benchmark examples tests
+    uv run ruff check --fix src/promptum examples tests
 
 # Format code
 format:
-    uv run ruff format src/llm_benchmark examples tests
+    uv run ruff format src/promptum examples tests
 
 # Run all tests with pytest (coverage enabled by default)
 test:

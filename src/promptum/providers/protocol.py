@@ -1,6 +1,6 @@
 from typing import Any, Protocol
 
-from llm_benchmark.core.metrics import Metrics
+from promptum.core.metrics import Metrics
 
 
 class LLMProvider(Protocol):

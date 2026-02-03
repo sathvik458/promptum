@@ -1,7 +1,7 @@
 import yaml
 
-from llm_benchmark.benchmark.report import Report
-from llm_benchmark.serialization.base import BaseSerializer
+from promptum.benchmark.report import Report
+from promptum.serialization.base import BaseSerializer
 
 
 class YAMLSerializer(BaseSerializer):

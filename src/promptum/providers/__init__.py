@@ -1,5 +1,5 @@
-from llm_benchmark.providers.openrouter import OpenRouterClient
-from llm_benchmark.providers.protocol import LLMProvider
+from promptum.providers.openrouter import OpenRouterClient
+from promptum.providers.protocol import LLMProvider
 
 __all__ = [
     "LLMProvider",

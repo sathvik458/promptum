@@ -1,6 +1,6 @@
 from typing import Any, Protocol
 
-from llm_benchmark.benchmark.report import Report
+from promptum.benchmark.report import Report
 
 
 class ResultStorage(Protocol):

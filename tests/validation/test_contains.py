@@ -1,4 +1,4 @@
-from llm_benchmark.validation import Contains
+from promptum.validation import Contains
 
 
 def test_contains_case_sensitive(contains_validator: Contains) -> None:

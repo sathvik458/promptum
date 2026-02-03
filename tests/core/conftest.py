@@ -1,6 +1,6 @@
 import pytest
 
-from llm_benchmark.core import Metrics, RetryConfig
+from promptum.core import Metrics, RetryConfig
 
 
 @pytest.fixture

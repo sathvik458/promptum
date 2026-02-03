@@ -2,8 +2,8 @@ from dataclasses import dataclass, field
 from datetime import datetime
 from typing import Any
 
-from llm_benchmark.core.metrics import Metrics
-from llm_benchmark.core.test_case import TestCase
+from promptum.core.metrics import Metrics
+from promptum.core.test_case import TestCase
 
 
 @dataclass(frozen=True, slots=True)

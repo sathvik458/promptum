@@ -1,5 +1,5 @@
-from llm_benchmark.core import TestCase
-from llm_benchmark.validation import Contains
+from promptum.core import TestCase
+from promptum.validation import Contains
 
 
 def test_test_case_creation() -> None:

@@ -1,7 +1,7 @@
-from llm_benchmark.core.metrics import Metrics
-from llm_benchmark.core.result import TestResult
-from llm_benchmark.core.retry import RetryConfig, RetryStrategy
-from llm_benchmark.core.test_case import TestCase
+from promptum.core.metrics import Metrics
+from promptum.core.result import TestResult
+from promptum.core.retry import RetryConfig, RetryStrategy
+from promptum.core.test_case import TestCase
 
 __all__ = [
     "Metrics",

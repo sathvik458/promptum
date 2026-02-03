@@ -2,8 +2,8 @@ from datetime import datetime
 
 import pytest
 
-from llm_benchmark.core import Metrics, TestCase, TestResult
-from llm_benchmark.validation import Contains
+from promptum.core import Metrics, TestCase, TestResult
+from promptum.validation import Contains
 
 
 @pytest.fixture

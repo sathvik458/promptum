@@ -3,9 +3,9 @@ from dataclasses import dataclass, field
 from typing import TYPE_CHECKING, Any
 
 if TYPE_CHECKING:
-    from llm_benchmark.validation.protocol import Validator
+    from promptum.validation.protocol import Validator
 
-from llm_benchmark.core.retry import RetryConfig
+from promptum.core.retry import RetryConfig
 
 
 @dataclass(frozen=True, slots=True)
