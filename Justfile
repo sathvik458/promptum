@@ -8,11 +8,11 @@ typecheck:
 
 # Run ruff linter with automatic fixes
 lint:
-    uv run ruff check --fix src/promptum examples tests
+    uv run ruff check --fix src/promptum tests
 
 # Format code
 format:
-    uv run ruff format src/promptum examples tests
+    uv run ruff format src/promptum tests
 
 # Run all tests with pytest (coverage enabled by default)
 test:
