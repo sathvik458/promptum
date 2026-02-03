@@ -1,5 +1,5 @@
 [run]
-source = llm_benchmark
+source = promptum
 omit = tests/*
 
 [report]

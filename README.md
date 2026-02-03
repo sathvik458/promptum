@@ -1,4 +1,4 @@
-# llm-benchmark
+# promptum
 
 <div align="center">
 
@@ -34,7 +34,7 @@ That's it. No setup. No config files. Just results.
 
 ## Why You Need This
 
-**Before llm-benchmark:**
+**Before promptum:**
 ```python
 # Custom API client for each provider
 openai_client = OpenAI(api_key=...)
@@ -60,7 +60,7 @@ for attempt in range(max_retries):
 json.dump(results, open("results.json", "w"))
 ```
 
-**After llm-benchmark:**
+**After promptum:**
 ```python
 report = await benchmark.run_async()
 HTMLSerializer().serialize(report)  # Beautiful HTML report
@@ -71,13 +71,13 @@ HTMLSerializer().serialize(report)  # Beautiful HTML report
 ## Quick Start
 
 ```bash
-pip install llm-benchmark  # (or: uv pip install llm-benchmark)
+pip install promptum  # (or: uv pip install promptum)
 export OPENROUTER_API_KEY="your-key"
 ```
 
 ```python
 import asyncio
-from llm_benchmark import Benchmark, TestCase, OpenRouterClient, Contains
+from promptum import Benchmark, TestCase, OpenRouterClient, Contains
 
 async def main():
     async with OpenRouterClient(api_key="your-key") as client:
@@ -125,7 +125,7 @@ python your_script.py
 Compare GPT-4 vs Claude on your tasks:
 
 ```python
-from llm_benchmark import Benchmark, TestCase, ExactMatch, Contains, Regex
+from promptum import Benchmark, TestCase, ExactMatch, Contains, Regex
 
 tests = [
     TestCase(
@@ -152,7 +152,7 @@ benchmark.add_tests(tests)
 report = await benchmark.run_async()
 
 # Export as HTML
-from llm_benchmark import HTMLSerializer
+from promptum import HTMLSerializer
 html = HTMLSerializer().serialize(report)
 open("comparison.html", "w").write(html)
 ```
@@ -176,14 +176,14 @@ Open `comparison.html` in your browser - see side-by-side model performance with
 
 ```bash
 # Using pip
-pip install llm-benchmark
+pip install promptum
 
 # Using uv (faster)
-uv pip install llm-benchmark
+uv pip install promptum
 
 # Development setup
-git clone https://github.com/yourusername/llm-benchmark.git
-cd llm-benchmark
+git clone https://github.com/yourusername/promptum.git
+cd promptum
 just sync  # Install dependencies
 just test  # Run tests
 ```
@@ -244,7 +244,7 @@ MIT - do whatever you want with it.
 
 <div align="center">
 
-**[⭐ Star on GitHub](https://github.com/yourusername/llm-benchmark)** | **[🐛 Report Bug](https://github.com/yourusername/llm-benchmark/issues)** | **[💡 Request Feature](https://github.com/yourusername/llm-benchmark/issues)**
+**[⭐ Star on GitHub](https://github.com/yourusername/promptum)** | **[🐛 Report Bug](https://github.com/yourusername/promptum/issues)** | **[💡 Request Feature](https://github.com/yourusername/promptum/issues)**
 
 Made for developers who value their time.
 
