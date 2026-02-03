@@ -109,14 +109,14 @@ python your_script.py
 
 ## What You Get
 
-✅ **One API for 100+ Models** - OpenRouter support out of the box (OpenAI, Anthropic, Google, etc.)
-✅ **Smart Validation** - ExactMatch, Contains, Regex, JsonSchema, or write your own
-✅ **Automatic Retries** - Exponential/linear backoff with configurable attempts
-✅ **Metrics Tracking** - Latency, tokens, cost - automatically captured
-✅ **Beautiful Reports** - JSON, YAML, or interactive HTML with charts
-✅ **Async by Default** - Run 100 tests in parallel without breaking a sweat
-✅ **Type Safe** - Full type hints, catches errors before runtime
-✅ **Zero Config** - No YAML files, no setup scripts, just Python
+- [x] **One API for 100+ Models** - OpenRouter support out of the box (OpenAI, Anthropic, Google, etc.)
+- [x] **Smart Validation** - ExactMatch, Contains, Regex, JsonSchema, or write your own
+- [x] **Automatic Retries** - Exponential/linear backoff with configurable attempts
+- [x] **Metrics Tracking** - Latency, tokens, cost - automatically captured
+- [x] **Beautiful Reports** - JSON, YAML, or interactive HTML with charts
+- [x] **Async by Default** - Run 100 tests in parallel without breaking a sweat
+- [x] **Type Safe** - Full type hints, catches errors before runtime
+- [x] **Zero Config** - No YAML files, no setup scripts, just Python
 
 ---
 
