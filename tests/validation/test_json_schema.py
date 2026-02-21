@@ -41,3 +41,9 @@ def test_json_schema_describe() -> None:
     assert "Valid JSON" in description
     assert "a" in description
     assert "b" in description
+
+def test_json_schema_describe_without_required_keys() -> None:
+    validator = JsonSchema(required_keys=())
+    description = validator.describe()
+
+    assert description == "Valid JSON object"
